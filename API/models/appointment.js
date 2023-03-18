@@ -20,6 +20,10 @@ const Appointment = sequelize.define("users", {
   },
 });
 
+// Define a function to handle errors
+function handleError(error) {
+  console.error("Error: ", error);
+}
 sequelize.sync();
 
 module.exports = Appointment;
